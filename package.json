@@ -2,8 +2,13 @@
   "name": "spannable-string-formatter",
   "version": "0.0.1",
   "description": "A SpannableString Formatter for JavaScript",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
