@@ -4,6 +4,9 @@
   "description": "A SpannableString Formatter for JavaScript",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "jest"
