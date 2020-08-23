@@ -4,4 +4,7 @@ node_modules/
 # Distribution Directory
 dist/
 
+# Code Coverage
+coverage/
+
 .DS_Store
