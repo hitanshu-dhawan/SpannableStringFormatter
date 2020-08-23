@@ -1,0 +1,19 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:7.10.1
+    steps:
+      - checkout
+      - run:
+          name: Download Dependencies
+          command: npm install
+      - run:
+          name: Run Lints
+          command: npm run lint
+      - run:
+          name: Run Tests
+          command: npm test
+      - run:
+          name: Upload Test Coverage Reports
+          command: bash <(curl -s https://codecov.io/bash) -Z
