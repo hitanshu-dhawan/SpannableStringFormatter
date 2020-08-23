@@ -10,8 +10,10 @@
   "scripts": {
     "build": "tsc",
     "test": "jest",
+    "lint": "eslint src/ tests/",
     "format": "prettier --write src/ tests/",
-    "lint": "eslint src/ tests/"
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint"
   },
   "repository": {
     "type": "git",
