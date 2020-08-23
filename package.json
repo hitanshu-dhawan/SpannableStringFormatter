@@ -1,6 +1,6 @@
 {
   "name": "spannable-string-formatter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A SpannableString Formatter for JavaScript",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
