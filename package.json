@@ -11,7 +11,6 @@
     "build": "tsc",
     "test": "jest",
     "lint": "eslint src/ tests/",
-    "format": "prettier --write src/ tests/",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint"
   },
