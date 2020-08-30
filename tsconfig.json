@@ -1,9 +1,11 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "module": "commonjs",
     "declaration": true,
+
+    "rootDir": "src",
     "outDir": "lib",
+
     "strict": true
   },
   "include": ["src/**/*"],
