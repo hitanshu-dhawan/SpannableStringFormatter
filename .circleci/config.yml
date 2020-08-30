@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           name: Download Dependencies
-          command: npm install
+          command: npm ci
       - run:
           name: Run Lints
           command: npm run lint
