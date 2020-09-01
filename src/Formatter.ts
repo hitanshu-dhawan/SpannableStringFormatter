@@ -6,7 +6,7 @@ export class Formatter {
     return this;
   }
 
-  toString(): string {
+  public toString(): string {
     return `{ ${this.text} }`;
   }
 }
