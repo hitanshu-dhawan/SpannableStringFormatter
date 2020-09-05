@@ -1,1 +1,1 @@
-export * from "./SpannableStringFormatter";
+export * from "./formatter/SpannableStringFormatter";
