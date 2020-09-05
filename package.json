@@ -9,10 +9,10 @@
   ],
   "scripts": {
     "build": "tsc",
-    "test": "jest",
     "lint": "eslint src/ tests/",
+    "test": "jest",
     "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run lint"
+    "prepublishOnly": "npm run lint && npm test"
   },
   "repository": {
     "type": "git",
