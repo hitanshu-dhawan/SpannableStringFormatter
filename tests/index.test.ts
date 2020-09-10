@@ -31,7 +31,7 @@ describe("text having single property", () => {
       SpannableStringFormatter.text("Hitanshu Dhawan")
         .property("text-color", "#0000FF")
         .toString()
-    ).toBe("{ `Hitanshu Dhawan` <text-color:`#0000FF`/> }");
+    ).toBe("{ `Hitanshu Dhawan` <text-color:#0000FF/> }");
   });
 
   test("text having single property with multiple values", () => {
@@ -39,9 +39,7 @@ describe("text having single property", () => {
       SpannableStringFormatter.text("Hitanshu Dhawan")
         .property("text-decoration", "underline", "strike-through")
         .toString()
-    ).toBe(
-      "{ `Hitanshu Dhawan` <text-decoration:`underline`|`strike-through`/> }"
-    );
+    ).toBe("{ `Hitanshu Dhawan` <text-decoration:underline|strike-through/> }");
   });
 });
 
@@ -53,7 +51,7 @@ describe("text having multiple properties", () => {
         .property("text-decoration", "underline")
         .toString()
     ).toBe(
-      "{ `Hitanshu Dhawan` <text-color:`#0000FF`;text-decoration:`underline`/> }"
+      "{ `Hitanshu Dhawan` <text-color:#0000FF;text-decoration:underline/> }"
     );
   });
 
@@ -64,7 +62,7 @@ describe("text having multiple properties", () => {
         .property("text-decoration", "underline", "strike-through")
         .toString()
     ).toBe(
-      "{ `Hitanshu Dhawan` <text-color:`#0000FF`;text-decoration:`underline`|`strike-through`/> }"
+      "{ `Hitanshu Dhawan` <text-color:#0000FF;text-decoration:underline|strike-through/> }"
     );
   });
 });

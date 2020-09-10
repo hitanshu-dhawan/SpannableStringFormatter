@@ -24,7 +24,7 @@ export class Formatter {
       .replace(
         Constants.DECLARATIONS,
         this.declarations
-          .map(({ property, values }) => `${property}:${values.map((value) => `\`${value}\``).join("|")}`)
+          .map(({ property, values }) => `${property}:${values.join("|")}`)
           .join(";")
       );
   }
