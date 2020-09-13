@@ -21,10 +21,11 @@
   "keywords": [
     "android",
     "android-library",
+    "span",
     "spans",
     "spannable",
-    "spannablestring",
-    "spannablestringbuilder"
+    "spannable-string",
+    "spannable-string-builder"
   ],
   "author": "Hitanshu Dhawan <hitanshudhawan1996@gmail.com>",
   "license": "Apache-2.0",
